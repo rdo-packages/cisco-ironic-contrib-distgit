@@ -12,9 +12,10 @@ Summary:        %{plugin_vendor} Ironic Integration
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{package_name}
-Source0:        https://pypi.python.org/packages/source/n/networking-cisco/networking-cisco-2015.1.2.tar.gz
+Source0:        https://pypi.python.org/packages/source/c/%{package_name}/%{package_name}-0.0.0.tar.gz
 
 BuildArch:      noarch
+BuildRequires:  git
 BuildRequires:  python2-devel
 BuildRequires:  python-mock
 BuildRequires:  python-oslo-sphinx
@@ -35,7 +36,7 @@ Requires(preun): systemd
 Requires(postun): systemd
 
 %description
-This package contains %{plugin_vendor} networking driver for OpenStack Neutron.
+This package contains %{plugin_vendor} Ironic plugins for OpenStack.
 
 %prep
 %autosetup -q -n %{package_name}-%{upstream_version} -S git
