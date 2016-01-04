@@ -12,7 +12,7 @@ Summary:        %{plugin_vendor} Ironic Integration
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{package_name}
-Source0:        https://pypi.python.org/packages/source/c/%{package_name}/%{package_name}-0.0.0.tar.gz
+Source0:        https://pypi.python.org/packages/source/c/%{package_name}/%{package_name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
@@ -39,7 +39,7 @@ Requires(postun): systemd
 This package contains %{plugin_vendor} Ironic plugins for OpenStack.
 
 %prep
-%autosetup -q -n %{package_name}-%{upstream_version} -S git
+%autosetup -n %{package_name}-%{upstream_version} -S git
 
 # Let's handle dependencies ourseleves
 rm -f requirements.txt
@@ -65,8 +65,6 @@ export SKIP_PIP_INSTALL=1
 %doc %{docpath}
 %{python2_sitelib}/%{srcname}
 %{python2_sitelib}/%{srcname}-%{version}-py%{python2_version}.egg-info
-%{_bindir}/pxe_iscsi_cimc_neutron
-%{_bindir}/pxe_agent_cimc_neutron
 
 
 %changelog
