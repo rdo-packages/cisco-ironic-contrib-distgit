@@ -28,8 +28,7 @@ BuildRequires:	systemd-units
 
 Requires:       python-babel
 Requires:       python-pbr
-# Requires:       python-ImcSdk
-# TODO: pending: https://bugzilla.redhat.com/show_bug.cgi?id=1293425
+Requires:       python-ImcSdk
 
 Requires(post): systemd
 Requires(preun): systemd
