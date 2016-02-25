@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-312eef3ca376d1a7a5c66e26be720edcf5e5c7c4	cisco-ironic-contrib-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+c62cbcb7d52b9fd900f6c184b6b74f839512ca3d       	cisco-ironic-contrib-distgit-core
+312eef3ca376d1a7a5c66e26be720edcf5e5c7c4        	cisco-ironic-contrib-distgit-ptl
+global:Registered-Users		Registered Users
