@@ -30,9 +30,7 @@ Requires:       python-babel
 Requires:       python-pbr
 Requires:       python-ImcSdk
 
-Requires(post): systemd
-Requires(preun): systemd
-Requires(postun): systemd
+%{?systemd_requires}
 
 %description
 This package contains %{plugin_vendor} Ironic plugins for OpenStack.
