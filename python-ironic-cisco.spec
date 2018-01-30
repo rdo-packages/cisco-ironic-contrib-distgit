@@ -24,7 +24,6 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
 BuildRequires:  python-testrepository
 BuildRequires:  python-testtools
-BuildRequires:	systemd-units
 
 Requires:       python-babel
 Requires:       python-pbr
