@@ -29,7 +29,11 @@ Requires:       python-babel
 Requires:       python-pbr
 Requires:       python-ImcSdk
 
+%if 0%{?rhel} && 0%{?rhel} < 8
 %{?systemd_requires}
+%else
+%{?systemd_ordering} # does not exist on EL7
+%endif
 
 %description
 This package contains %{plugin_vendor} Ironic plugins for OpenStack.
