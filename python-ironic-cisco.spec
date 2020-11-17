@@ -15,7 +15,7 @@ URL:            https://pypi.python.org/pypi/%{package_name}
 Source0:        https://pypi.python.org/packages/source/c/%{package_name}/%{package_name}-%{version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python2-devel
 BuildRequires:  python-mock
 BuildRequires:  python-oslo-sphinx
